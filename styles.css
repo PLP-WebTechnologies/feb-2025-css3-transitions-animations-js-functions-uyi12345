@@ -1,0 +1,69 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+  }
+  
+  /* Box Styling */
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #007BFF;
+    border-radius: 10px;
+    animation: none;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark .btn {
+    background-color: #444;
+  }
+  
+  body.dark .btn:hover {
+    background-color: #666;
+  }
+  
+  body.dark .box {
+    background-color: #fff;
+  }
+  
+  /* Keyframes for Box Animation */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
